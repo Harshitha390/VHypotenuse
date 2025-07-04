@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* Universal selector */
+        *{
+           font-weight: bold;
+        }
+
+        /* Simple selector */
+       div{
+            height: 500px;
+            border: 2px solid blue;
+       }
+
+       /* Group selector */
+         h1,h2{
+            color: brown;
+        } 
+
+        /* Id selector */
+        #header1{
+            width: 50%;
+            border: 2px dashed red;
+        }
+
+        /* class selector */
+        .header2{
+            border: 2px dashed red;
+        }
+
+        /* Child-selector */
+        div > h2{
+            
+            border: 3px solid gold;
+        } 
+
+        /* Descendant selector */
+         h2 p {
+            background-color: blue;
+         }
+
+         /* Adjacent-sibling selector */
+         h2 + p{
+            color: blue;
+         }
+
+         /* General-sibling selector */
+         a ~ p{
+            background-color: rgb(248, 12, 197);
+         } 
+
+
+        /* Pseudo-class selector */
+        a:hover{
+        color: chartreuse;
+       }
+
+       /* Pseudo-element selector */
+       div::first-letter{
+       border: 2px solid green;
+       }
+
+       /* Attribute selector */
+       a[href]{
+         background-color: aqua;
+       }
+
+    </style>
+</head>
+<body>
+    <!--Inline-css--> 
+    <div style="background-color:cadetblue; color: blorue; "> 
+        <h1 id="header1">Welcome</h1>
+        <h2 class="header2">Hello</h2>
+        <h2>Outer header</h2>
+        <p>  
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam libero veritatis quasi, maxime laborum. Cupiditate aliquid quo laborum, sequi quas id rerum debitis, earum voluptate vero harum dolores incidunt.
+        Dolorem in sapiente error quisquam, nostrum dicta officia voluptas ipsum rerum nemo iste veritatis soluta reprehenderit accusamus pariatur fugit aut maiores quos. Qui et explicabo distinctio iste saepe aperiam accusamus!
+        </p>
+
+        <p>
+            <h2>Inner header</h2>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi sequi adipisci excepturi neque quod, accusantium deserunt dicta voluptatibus temporibus asperiores quis ipsa delectus sit. Labore modi ab in at eligendi?
+        </p>
+
+        <a href=""> ClickHere</a>
+
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, illo. Maiores, sit suscipit ea in iusto dolore consectetur vel nemo ex. Molestiae error autem hic qui dolor, numquam at blanditiis?</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum nihil necessitatibus laborum voluptate! Saepe ducimus deserunt asperiores veritatis explicabo voluptatem in eum repellat dicta dignissimos nemo, at tempora eaque. </p>
+    </div>
+
+</body>
+</html>
