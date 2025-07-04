@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Typograpfy */
+        h1{
+            font-family: serif;
+        }
+        p{
+             font-family: sans-serif;
+        }
+        span{
+            font-family: monospace;
+        }
+        #box{
+            font-weight: bold ;
+        }
+    
+        .margin{
+           
+            background-color: aqua;
+            padding: 20px;
+        }
+        .border{
+    
+            border: 3px solid blue;
+            background-color: white;
+            padding:20px
+        }
+        .padding{
+          
+            background-color: cornflowerblue;
+            padding: 20px;
+        }
+        .content{
+            
+            background-color:  green;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur distinctio rem tempore? Fuga quae et eius aliquam molestiae iure. Eum quasi ipsam provident? Eligendi, repellat sequi officia at laboriosam rem.
+    Magni deleniti dolores omnis mollitia iusto? Repellat mollitia nulla quisquam voluptatibus sunt dignissimos hic, ipsam fugit laudantium modi eius aperiam rerum impedit doloribus cum fugiat tempora a asperiores. Eos, molestias?</p>
+        <span>Hiii</span>
+        <span>Hello</span>
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
+
+    <h2>Front-End Technologies</h2>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>React.js</li>
+        <li>Vue.js</li>
+    </ol>
+
+    <h2>Backend Technologies</h2>
+    <ul type="circle">
+        <li>C++</li>
+        <li>Java</li>
+        <li>C#</li>
+        <li>Python</li>
+        <li>Ruby</li>
+    </ul>
+
+    <h2>Technical Skils</h2>
+    <dl>
+     <dt>Languages</dt>
+    <dd>Java, Python, JavaScript</dd>
+
+    <dt>Web Technologies</dt>
+    <dd>HTML5, CSS3, Bootstrap, Vue.js</dd>
+
+    <dt>Database</dt>
+    <dd>MySQL, MongoDB</dd>
+
+    <dt>Tools</dt>
+    <dd>Git, VS Code, Postman</dd></dt>
+    </dl>
+
+    <a href="data:image/png;base64,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" 
+       download="Logo.png">DOWNLOAD</a>
+       
+    <h2> CSS Box Model</h2>
+    <div class="margin"  id="box">Margin
+     <div class="border" id="box"> Border
+      <div class="padding" id="box">Padding
+        <div class="content" id="box">Content</div>
+    </div>
+   </div>
+   </div>
+    
+</body>
+</html>
