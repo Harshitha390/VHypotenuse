@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let marks=66;
+        
+        //if-Statement
+        if(marks>35){
+            console.log("Passed");
+        }
+
+        //if-else Statement
+        if(marks>35){
+            console.log("Passed");
+        }
+        else{
+            console.log("Failed");
+        }
+
+        //else-if ladder
+        if(marks>=90){
+            console.log("A+ Grade");
+        }
+        else if(marks>=80 && marks<=90){
+            console.log("A Grade");
+        }
+        else if(marks>=70 && marks<=80){
+            console.log("B Garde");
+        }
+        else if(marks>=60 && marks<=70){
+            console.log("C Grade");
+        }
+        else{
+            console.log("D Grade");
+        }
+
+        //Switch Statement
+        let grade="B";
+        let result="";
+        switch(grade)
+        {
+            case "A":
+                result="Excellent!";
+                break;
+            case "B":
+                result="Good";
+                break;
+            case "C":
+                result="Better";
+                break;
+            default:
+                result="Invalid Grade"
+        }
+        console.log(result);
+    </script>
+</body>
+</html>

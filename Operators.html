@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    <script>
+        //Arithmetic Operators
+        let x=4;
+        let y=2;
+        let z=1
+        console.log("Addition: "+(x+y));
+        console.log("Subtraction: "+(x-y));
+        console.log("Multipication: "+(x*y));
+        console.log("Exponential: "+(x**y));
+        console.log("Division: "+(x/y));
+        console.log("Modulus: "+(x%y));
+        console.log("Increment: "+(x++),(++x));
+        console.log("Decrement: "+(y--),(--y));
+
+        //Assignment Operator
+        console.log("Asignment: "+x);
+        console.log("Addition and Assign: "+(x+=5));
+        console.log("Subtraction and Assign: "+(x-=3));
+        console.log("Multiplication and Assign: "+(x*=5));
+        console.log("Exponential and Assign: "+(x**=3));
+        console.log("Division and Assign: "+(y/=z));
+        console.log("Modulus and Assign: "+(z%=1));
+        
+        //Comparision Operator
+        let a=5;
+        let b=4;
+        let c="5";
+        console.log("Equals: "+(a==c));
+        console.log("strict Equals: "+(a===c));
+        console.log("strict Equals: "+(a!==c));
+        console.log("Not Equals: "+(a!=b));
+        console.log("Greater than : "+(a>b));
+        console.log("Greater than or Equals: "+(a>=b));
+        console.log("Less than: "+(a<b));
+        console.log("Less than or Equals: "+(a<=b));
+
+        //Logical Operators
+        let m=true;
+        let n=false;
+        //Logical AND
+        console.log("true && true: " + m && m);
+        console.log("true && false: "+ m && n);
+        //Logical OR
+        console.log("true || false: "+ m || n);
+        console.log("false || false: "+ n || n)
+        //Logical NOT
+        console.log("!true: "+!m);
+        console.log("!false: "+!n);
+
+        //Ternary Operator
+        console.log((4>2)?"true":"false");
+
+        //typeof Operator
+        console.log("Type: "+typeof(m));
+    </script>
+</body>
+</html>
