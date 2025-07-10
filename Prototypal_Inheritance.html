@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Base Object
+        const Vehicle = {
+            wheels:4,
+            describe:function(){
+                console.log(`This Vehicle has ${this.wheels} wheels`);
+            }
+        };
+
+        // Derived Object
+        const bike=Object.create(Vehicle);
+        bike.wheels=2,
+        bike.ringBell =function(){
+            console.log("Ring Ring!");
+        };
+
+        // Derived Object
+        const car=Object.create(Vehicle);
+        car.honk=function(){
+            console.log("Beep Beep");
+        };
+
+        bike.describe();
+        bike.ringBell();
+        
+        car.describe();
+        car.honk();
+    </script>
+</html>

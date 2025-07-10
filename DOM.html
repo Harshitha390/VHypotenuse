@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="image" src="https://static.vecteezy.com/system/resources/thumbnails/001/416/690/small_2x/js-emblem-orange-shield-and-white-text-vector.jpg" alt="">
+    <button onclick="increase()">Large</button>
+    <button onclick="decrease()">Small</button>
+    <script>
+        function increase(){
+            let x=document.getElementById("image");
+            x.style.height="500px";
+            x.style.widows="500px";
+        };
+
+        function decrease(){
+            let x=document.getElementById("image");
+            x.style.height="80px";
+            x.style.widows="80px";
+        };
+
+    </script>
+</body>
+</html>

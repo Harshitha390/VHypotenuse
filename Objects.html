@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let product = {
+        name: "laptop",
+        brand:"HP",
+        price:55000,
+        isWorking:true,
+        greet: function() {
+        console.log("Hello, your product is " + this.name);
+        }
+        };
+
+        // Accessing properties
+        console.log(product.name);      
+        console.log(product['price']);     
+
+        // Calling a method
+        product.greet();       
+
+        // Adding a new property
+        product.color = "white";
+        console.log(product.color); 
+        console.log(product); 
+
+        // Deleting a property
+        delete product.isWorking;
+        console.log(product); 
+    </script>
+</body>
+</html>
